@@ -21,7 +21,7 @@ clubs = {
     "𓊆ྀི ꜱᴘᴏʀᴛꜱ ᴄʟᴜʙ 𓊇ྀི": "A team-focused club for activities like basketball and volleyball."
 }
 
-def show_club_info(e):
+def display_club_info(e):
     name = document.getElementById("club").value
     info = clubs[name]
     display(info, target="clubOutput")
