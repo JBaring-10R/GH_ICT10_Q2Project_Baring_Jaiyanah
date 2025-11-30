@@ -1,70 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- BS SETUP -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- CSS SETUP -->
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
-<script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
-<title>PROJECT</title>
-</head>
+from pyscript import display, document  # type: ignore
 
-<body>
+def compute_gwa(e):
+    g1 = float(document.getElementById('grade1').value)
+    g2 = float(document.getElementById('grade2').value)
+    g3 = float(document.getElementById('grade3').value)
+    g4 = float(document.getElementById('grade4').value)
+    g5 = float(document.getElementById('grade5').value)
 
-<div class="navbar" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
-    <div class="school-name" style="font-weight: bold; font-size: 20px;">
-       ⁺༝꒰১ 𝓓σℓℓ 𝓐૮α∂εɱყ ໒꒱ིྀ༝⁺</div>
+    total = g1 + g2 + g3 + g4 + g5
+    gwa = total / 5
 
-    <div class="nav-links" style="display: flex; gap: 15px;">
-        <a href="#" onclick="showSection('home')">Home</a>
-        <a href="#" onclick="showSection('gwa')">GWA Calculator</a>
-        <a href="#" onclick="showSection('clubs')">School Clubs</a>
-    </div>
-</div>
-<!-- HOME -->
-<div id="home" class="section" style="display:block;">
-    <h1>⋆𐙚 ̊. ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴅᴏʟʟ ᴀᴄᴀᴅᴇᴍʏ ᵎᵎ </h1>
-    <p>˖⁺ ⊹ ᴅᴏʟʟ ᴀᴄᴀᴅᴇᴍʏ – ᴀɴ ɪɴꜱᴘɪʀɪɴɢ ᴀᴄᴀᴅᴇᴍʏ ꜰᴏʀ ʏᴏᴜɴɢ ᴡᴏᴍᴇɴ ᴡʜᴇʀᴇ ᴄᴜʀɪᴏꜱɪᴛʏ, ᴄʀᴇᴀᴛɪᴠɪᴛʏ, ᴀɴᴅ ᴄᴏɴꜰɪᴅᴇɴᴄᴇ ꜰʟᴏᴜʀɪꜱʜ. ᴀᴛ ᴅᴏʟʟ ᴀᴄᴀᴅᴇᴍʏ, ꜱᴛᴜᴅᴇɴᴛꜱ ᴀʀᴇ ɢᴜɪᴅᴇᴅ ᴛᴏ ᴇxᴄᴇʟ ᴀᴄᴀᴅᴇᴍɪᴄᴀʟʟʏ ᴡʜɪʟᴇ ᴇxᴘʟᴏʀɪɴɢ ᴛʜᴇɪʀ ᴘᴀꜱꜱɪᴏɴꜱ, ꜰᴏʀᴍɪɴɢ ʟᴀꜱᴛɪɴɢ ꜰʀɪᴇɴᴅꜱʜɪᴘꜱ, ᴀɴᴅ ᴇᴍʙʀᴀᴄɪɴɢ ᴛʜᴇɪʀ ᴜɴɪQᴜᴇ ꜱᴛʀᴇɴɢᴛʜꜱ. ʜᴇʀᴇ, ᴇᴠᴇʀʏ ɢɪʀʟ ɪꜱ ᴇᴍᴘᴏᴡᴇʀᴇᴅ ᴛᴏ ꜱʜɪɴᴇ ᴀɴᴅ ɢʀᴏᴡ ɪɴᴛᴏ ʜᴇʀ ꜰᴜʟʟᴇꜱᴛ ᴘᴏᴛᴇɴᴛɪᴀʟ. ⊹ ⁺˖</p>
-</div>
+    display(f'🌙 Your GWA is {gwa:.2f} 🌙', target="output")
 
-<!-- GWA CALCULATOR -->
-<div id="gwa" class="section">
-    <h2> ᛝ ɢᴡᴀ ᴄᴀʟᴄᴜʟᴀᴛᴏʀ  ༘ ೀ</h2>
-    <input id="grade1" type="number" placeholder="Enter Grade 1"><br>
-    <input id="grade2" type="number" placeholder="Enter Grade 2"><br>
-    <input id="grade3" type="number" placeholder="Enter Grade 3"><br>
-    <input id="grade4" type="number" placeholder="Enter Grade 4"><br>
-    <input id="grade5" type="number" placeholder="Enter Grade 5"><br>
-    <input type="button" py-click="compute_gwa" value="Compute GWA">
-    <div id="output" class="output"></div>
-</div>
 
-<!-- SCHOOL CLUBS -->
-<div id="clubs" class="section">
-    <h2>ᛝ ꜱᴄʜᴏᴏʟ ᴄʟᴜʙꜱ  ༘ ೀ</h2>
-    <select id="club">
-        <option>𓊆ྀི ꜱᴄɪᴇɴᴄᴇ ᴄʟᴜʙ 𓊇ྀི</option>
-        <option>𓊆ྀི ᴀʀᴛꜱ ᴄʟᴜʙ 𓊇ྀི</option>
-        <option>𓊆ྀི ᴍᴜꜱɪᴄ ᴄʟᴜʙ 𓊇ྀི</option>
-        <option>𓊆ྀི ꜱᴘᴏʀᴛꜱ ᴄʟᴜʙ 𓊇ྀི</option>
-    </select><br>
-    <input type="button" py-click="show_club" value="Show Info">
-    <div id="clubOutput" class="output"></div>
-</div>
-
-<script>
-// Section switching
-function showSection(id){
-    let sections = document.querySelectorAll('.section');
-    sections.forEach(s => s.style.display = 'none');
-    document.getElementById(id).style.display = 'block';
+clubs = {
+    "𓊆ྀི ꜱᴄɪᴇɴᴄᴇ ᴄʟᴜʙ 𓊇ྀི": "A community for students who love discovering how things work. Members try hands-on experiments, explore biology, chemistry, and physics, and even build simple robotics and tech projects.",
+    "𓊆ྀི ᴀʀᴛꜱ ᴄʟᴜʙ 𓊇ྀི": "A creative space for students who enjoy making visual art. Members paint, draw, sculpt, and experiment with different materials.",
+    "𓊆ྀི ᴍᴜꜱɪᴄ ᴄʟᴜʙ 𓊇ྀི": "A group for students who enjoy singing, playing instruments, and performing. Members practice together and join school programs.",
+    "𓊆ྀི ꜱᴘᴏʀᴛꜱ ᴄʟᴜʙ 𓊇ྀི": "A club for students who want to stay active and enjoy team activities like basketball and volleyball."
 }
-</script>
 
-<script type="py" src="main.py"></script>
-
-</body>
-</html>
+def show_club(e):
+    name = document.getElementById('club').value
+    text = clubs[name]
+    display(text, target="clubOutput")
