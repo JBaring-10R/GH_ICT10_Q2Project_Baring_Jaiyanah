@@ -14,19 +14,16 @@
 
 <body>
 
-<!-- NAVBAR -->
 <div class="navbar" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
     <div class="school-name" style="font-weight: bold; font-size: 20px;">
-       ⁺༝꒰১ 𝓓σℓℓ 𝓐૮α∂εɱყ ໒꒱ིྀ༝⁺
-    </div>
+       ⁺༝꒰১ 𝓓σℓℓ 𝓐૮α∂εɱყ ໒꒱ིྀ༝⁺</div>
 
     <div class="nav-links" style="display: flex; gap: 15px;">
-        <a href="#" py-click="show_home">Home</a>
-        <a href="#" py-click="show_gwa">GWA Calculator</a>
-        <a href="#" py-click="show_clubs">School Clubs</a>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('gwa')">GWA Calculator</a>
+        <a href="#" onclick="showSection('clubs')">School Clubs</a>
     </div>
 </div>
-
 <!-- HOME -->
 <div id="home" class="section" style="display:block;">
     <h1>⋆𐙚 ̊. ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴅᴏʟʟ ᴀᴄᴀᴅᴇᴍʏ ᵎᵎ </h1>
@@ -54,9 +51,25 @@
         <option>𓊆ྀི ᴍᴜꜱɪᴄ ᴄʟᴜʙ 𓊇ྀི</option>
         <option>𓊆ྀི ꜱᴘᴏʀᴛꜱ ᴄʟᴜʙ 𓊇ྀི</option>
     </select><br>
-    <input type="button" py-click="display_club_info" value="Show Info">
+    <input type="button" py-click="show_club" value="Show Info">
     <div id="clubOutput" class="output"></div>
 </div>
+
+<script>
+// Section switching
+function showSection(id){
+    let sections = document.querySelectorAll('.section');
+    sections.forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+</script>
+
+<script type="py" src="main.py"></script>
+
+</body>
+</html>
+
+heres my html btw.. can u help me make a main.py code keeping it simple w no conditional statements?
 
 <script type="py" src="main.py"></script>
 
