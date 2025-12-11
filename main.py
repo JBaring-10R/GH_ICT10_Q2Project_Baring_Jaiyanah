@@ -9,17 +9,17 @@ def compute_gwa(e):
         g5 = float(document.getElementById('Filipino').value)
 
         gwa = (g1 + g2 + g3 + g4 + g5) / 5
-        display(f'🌙 Your GWA is {gwa:.2f} 🌙', target="output")
+        display(f'𓊈ྀི ʏᴏᴜʀ ɢᴡᴀ ɪꜱ {gwa:.2f} 𓊉ྀི', target="output")
     except Exception:
-        display("⚠️ Please enter valid numbers in all fields ⚠️", target="output")
+        display("⚠️ ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ ᴠᴀʟɪᴅ ɴᴜᴍʙᴇʀꜱ ɪɴ ᴀʟʟ ꜰɪᴇʟᴅꜱ ⚠️", target="output")
 
 
 clubs = {
     
-    "𓊆ྀི ꜱᴄɪᴇɴᴄᴇ ᴄʟᴜʙ 𓊇ྀི": "A community for students who love discovering how things work. Members try hands-on experiments, explore biology, chemistry, and physics, and even build simple robotics and tech projects. It’s an exciting way to learn how science connects to everyday life.",
-    "𓊆ྀི ᴀʀᴛꜱ ᴄʟᴜʙ 𓊇ྀི": "A creative space for students who enjoy making visual art. Members paint, draw, sculpt, and experiment with different materials while learning new techniques. It’s a friendly place to express ideas, improve skills, and collaborate with fellow artists.",
-    "𓊆ྀི ᴍᴜꜱɪᴄ ᴄʟᴜʙ 𓊇ྀི": "A group for students who enjoy singing, playing instruments, and performing. Members practice together, study new pieces, and join school programs and competitions. It’s a chance to grow musically while enjoying the experience of performing with others.",
-    "𓊆ྀི ꜱᴘᴏʀᴛꜱ ᴄʟᴜʙ 𓊇ྀི": "A club for students who want to stay active and enjoy team activities. Members join games like basketball and volleyball while learning teamwork, discipline, and fair play. It’s a fun way to build strength, stay healthy, and make friends."
+    "𓊆ྀི ꜱᴄɪᴇɴᴄᴇ ᴄʟᴜʙ 𓊇ྀི": "ᴀ ᴄᴏᴍᴍᴜɴɪᴛʏ ꜰᴏʀ ꜱᴛᴜᴅᴇɴᴛꜱ ᴡʜᴏ ʟᴏᴠᴇ ᴅɪꜱᴄᴏᴠᴇʀɪɴɢ ʜᴏᴡ ᴛʜɪɴɢꜱ ᴡᴏʀᴋ. ᴍᴇᴍʙᴇʀꜱ ᴛʀʏ ʜᴀɴᴅꜱ-ᴏɴ ᴇxᴘᴇʀɪᴍᴇɴᴛꜱ, ᴇxᴘʟᴏʀᴇ ʙɪᴏʟᴏɢʏ, ᴄʜᴇᴍɪꜱᴛʀʏ, ᴀɴᴅ ᴘʜʏꜱɪᴄꜱ, ᴀɴᴅ ᴇᴠᴇɴ ʙᴜɪʟᴅ ꜱɪᴍᴘʟᴇ ʀᴏʙᴏᴛɪᴄꜱ ᴀɴᴅ ᴛᴇᴄʜ ᴘʀᴏᴊᴇᴄᴛꜱ. ɪᴛ’ꜱ ᴀɴ ᴇxᴄɪᴛɪɴɢ ᴡᴀʏ ᴛᴏ ʟᴇᴀʀɴ ʜᴏᴡ ꜱᴄɪᴇɴᴄᴇ ᴄᴏɴɴᴇᴄᴛꜱ ᴛᴏ ᴇᴠᴇʀʏᴅᴀʏ ʟɪꜰᴇ.",
+    "𓊆ྀི ᴀʀᴛꜱ ᴄʟᴜʙ 𓊇ྀི": "ᴀ ᴄʀᴇᴀᴛɪᴠᴇ ꜱᴘᴀᴄᴇ ꜰᴏʀ ꜱᴛᴜᴅᴇɴᴛꜱ ᴡʜᴏ ᴇɴᴊᴏʏ ᴍᴀᴋɪɴɢ ᴠɪꜱᴜᴀʟ ᴀʀᴛ. ᴍᴇᴍʙᴇʀꜱ ᴘᴀɪɴᴛ, ᴅʀᴀᴡ, ꜱᴄᴜʟᴘᴛ, ᴀɴᴅ ᴇxᴘᴇʀɪᴍᴇɴᴛ ᴡɪᴛʜ ᴅɪꜰꜰᴇʀᴇɴᴛ ᴍᴀᴛᴇʀɪᴀʟꜱ ᴡʜɪʟᴇ ʟᴇᴀʀɴɪɴɢ ɴᴇᴡ ᴛᴇᴄʜɴɪQᴜᴇꜱ. ɪᴛ’ꜱ ᴀ ꜰʀɪᴇɴᴅʟʏ ᴘʟᴀᴄᴇ ᴛᴏ ᴇxᴘʀᴇꜱꜱ ɪᴅᴇᴀꜱ, ɪᴍᴘʀᴏᴠᴇ ꜱᴋɪʟʟꜱ, ᴀɴᴅ ᴄᴏʟʟᴀʙᴏʀᴀᴛᴇ ᴡɪᴛʜ ꜰᴇʟʟᴏᴡ ᴀʀᴛɪꜱᴛꜱ.",
+    "𓊆ྀི ᴍᴜꜱɪᴄ ᴄʟᴜʙ 𓊇ྀི": "ᴀ ɢʀᴏᴜᴘ ꜰᴏʀ ꜱᴛᴜᴅᴇɴᴛꜱ ᴡʜᴏ ᴇɴᴊᴏʏ ꜱɪɴɢɪɴɢ, ᴘʟᴀʏɪɴɢ ɪɴꜱᴛʀᴜᴍᴇɴᴛꜱ, ᴀɴᴅ ᴘᴇʀꜰᴏʀᴍɪɴɢ. ᴍᴇᴍʙᴇʀꜱ ᴘʀᴀᴄᴛɪᴄᴇ ᴛᴏɢᴇᴛʜᴇʀ, ꜱᴛᴜᴅʏ ɴᴇᴡ ᴘɪᴇᴄᴇꜱ, ᴀɴᴅ ᴊᴏɪɴ ꜱᴄʜᴏᴏʟ ᴘʀᴏɢʀᴀᴍꜱ ᴀɴᴅ ᴄᴏᴍᴘᴇᴛɪᴛɪᴏɴꜱ. ɪᴛ’ꜱ ᴀ ᴄʜᴀɴᴄᴇ ᴛᴏ ɢʀᴏᴡ ᴍᴜꜱɪᴄᴀʟʟʏ ᴡʜɪʟᴇ ᴇɴᴊᴏʏɪɴɢ ᴛʜᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ ᴏꜰ ᴘᴇʀꜰᴏʀᴍɪɴɢ ᴡɪᴛʜ ᴏᴛʜᴇʀꜱ.",
+    "𓊆ྀི ꜱᴘᴏʀᴛꜱ ᴄʟᴜʙ 𓊇ྀི": "ᴀ ᴄʟᴜʙ ꜰᴏʀ ꜱᴛᴜᴅᴇɴᴛꜱ ᴡʜᴏ ᴡᴀɴᴛ ᴛᴏ ꜱᴛᴀʏ ᴀᴄᴛɪᴠᴇ ᴀɴᴅ ᴇɴᴊᴏʏ ᴛᴇᴀᴍ ᴀᴄᴛɪᴠɪᴛɪᴇꜱ. ᴍᴇᴍʙᴇʀꜱ ᴊᴏɪɴ ɢᴀᴍᴇꜱ ʟɪᴋᴇ ʙᴀꜱᴋᴇᴛʙᴀʟʟ ᴀɴᴅ ᴠᴏʟʟᴇʏʙᴀʟʟ ᴡʜɪʟᴇ ʟᴇᴀʀɴɪɴɢ ᴛᴇᴀᴍᴡᴏʀᴋ, ᴅɪꜱᴄɪᴘʟɪɴᴇ, ᴀɴᴅ ꜰᴀɪʀ ᴘʟᴀʏ. ɪᴛ’ꜱ ᴀ ꜰᴜɴ ᴡᴀʏ ᴛᴏ ʙᴜɪʟᴅ ꜱᴛʀᴇɴɢᴛʜ, ꜱᴛᴀʏ ʜᴇᴀʟᴛʜʏ, ᴀɴᴅ ᴍᴀᴋᴇ ꜰʀɪᴇɴᴅꜱ."
 
 }
 
