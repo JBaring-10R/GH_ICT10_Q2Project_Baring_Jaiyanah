@@ -2,11 +2,11 @@ from pyscript import display, document  # type: ignore
 
 def compute_gwa(e):
     try:
-        g1 = float(document.getElementById('grade1').value)
-        g2 = float(document.getElementById('grade2').value)
-        g3 = float(document.getElementById('grade3').value)
-        g4 = float(document.getElementById('grade4').value)
-        g5 = float(document.getElementById('grade5').value)
+        g1 = float(document.getElementById('English').value)
+        g2 = float(document.getElementById('Math').value)
+        g3 = float(document.getElementById('Science').value)
+        g4 = float(document.getElementById('Social Studies').value)
+        g5 = float(document.getElementById('Filipino').value)
 
         gwa = (g1 + g2 + g3 + g4 + g5) / 5
         display(f'🌙 Your GWA is {gwa:.2f} 🌙', target="output")
